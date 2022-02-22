@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用 xml 配置文件给 User 类自动的创建对象 -->
+    <!-- id：配置对象的别名，可以由此找到他的对象；class：配置的类的全类名 -->
+    <bean id="user" class="com.com.com.yuehai.test.User"></bean>
+
+    <!-- 使用 xml 配置文件给 Person 类自动的创建对象 -->
+    <!-- id：配置对象的别名，可以由此找到他的对象；class：配置的类的全类名 -->
+    <bean id="person" class="com.com.com.yuehai.test.Person">
+        <!-- set 方式注入属性，使用 property 完成 -->
+        <!-- name：类里面属性名称；value：向属性注入的值 -->
+        <property name="id" value="16"></property>
+        <property name="name" value="月海"></property>
+    </bean>
+
+    <!-- 使用 xml 配置文件给 Person 类自动的创建对象 -->
+    <!-- id：配置对象的别名，可以由此找到他的对象；class：配置的类的全类名 -->
+    <bean id="book" class="com.com.com.yuehai.test.Book">
+        <!-- 有参构造器方式注入属性，使用 constructor-arg 完成 -->
+        <!-- name：类里面属性名称；value：向属性注入的值 -->
+        <constructor-arg name="id" value="14"></constructor-arg>
+        <constructor-arg name="name" value="言"></constructor-arg>
+    </bean>
+
+    <!-- 使用 xml 配置文件给 Person 类自动的创建对象 -->
+    <!-- id：配置对象的别名，可以由此找到他的对象；class：配置的类的全类名 -->
+    <bean id="order" class="com.com.com.yuehai.test.Order" p:id="101" p:name="订单1"></bean>
+
+</beans>

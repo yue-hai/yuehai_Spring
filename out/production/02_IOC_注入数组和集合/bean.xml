@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 数组、List 集合、Map 集合、Set 集合类型属性注入 -->
+    <bean id="student" class="com.yuehai.bean.Student">
+        <!-- 数组类型属性注入 -->
+        <property name="courses">
+            <!-- list 和 array 标签都可以给数组赋值 -->
+            <array>
+                <value>java</value>
+                <value>html</value>
+            </array>
+        </property>
+
+        <!-- List 集合类型属性注入 -->
+        <property name="list">
+            <list>
+                <value>月海</value>
+                <value>言</value>
+            </list>
+        </property>
+        <!-- Map 集合类型属性注入 -->
+        <property name="maps">
+            <map>
+                <entry key="JAVA" value="java从入门到放弃"></entry>
+                <entry key="PHP" value="php是最好的语言"></entry>
+            </map>
+        </property>
+
+        <!-- Set 集合类型属性注入 -->
+        <property name="sets">
+            <set>
+                <value>乌贼</value>
+                <value>诡秘之主</value>
+            </set>
+        </property>
+
+        <!-- List 集合类型属性注入，值是对象 -->
+        <property name="courseList">
+            <list>
+                <ref bean="course1"></ref>
+                <ref bean="course2"></ref>
+            </list>
+        </property>
+
+    </bean>
+    <!--创建多个 course 对象-->
+    <bean id="course1" class="com.yuehai.bean.Course">
+        <property name="cname" value="课程：java"></property>
+    </bean><bean id="course2" class="com.yuehai.bean.Course">
+        <property name="cname" value="课程：html"></property>
+    </bean>
+
+</beans>

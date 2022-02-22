@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_spring_demo/00_spring_demo.iml" filepath="$PROJECT_DIR$/00_spring_demo/00_spring_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_IOC/01_IOC.iml" filepath="$PROJECT_DIR$/01_IOC/01_IOC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_IOC_注入数组和集合/02_IOC_注入数组和集合.iml" filepath="$PROJECT_DIR$/02_IOC_注入数组和集合/02_IOC_注入数组和集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_IOC_工厂Bean/03_IOC_工厂Bean.iml" filepath="$PROJECT_DIR$/03_IOC_工厂Bean/03_IOC_工厂Bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_IOC_注解/04_IOC_注解.iml" filepath="$PROJECT_DIR$/04_IOC_注解/04_IOC_注解.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_IOC_纯注解开发/05_IOC_纯注解开发.iml" filepath="$PROJECT_DIR$/05_IOC_纯注解开发/05_IOC_纯注解开发.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_AOP_demo/06_AOP_demo.iml" filepath="$PROJECT_DIR$/06_AOP_demo/06_AOP_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Spring.iml" filepath="$PROJECT_DIR$/06_Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_AOP_准备/07_AOP_准备.iml" filepath="$PROJECT_DIR$/07_AOP_准备/07_AOP_准备.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_JdbcTemplate/08_JdbcTemplate.iml" filepath="$PROJECT_DIR$/08_JdbcTemplate/08_JdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_事务/09_事务.iml" filepath="$PROJECT_DIR$/09_事务/09_事务.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_事务_完全注解开发/10_事务_完全注解开发.iml" filepath="$PROJECT_DIR$/10_事务_完全注解开发/10_事务_完全注解开发.iml" />
+    </modules>
+  </component>
+</project>

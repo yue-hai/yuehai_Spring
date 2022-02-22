@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 配置 Order 类 -->
+    <!-- init-method：配置自己编写的初始化的方法名称 -->
+    <!-- destroy-method：配置自己编写的销毁的方法名称 -->
+    <bean id="order" class="com.com.com.yuehai.bean.Order"
+          init-method="initMethod" destroy-method="destroyMethod">
+        <property name="name" value="JAVA"></property>
+    </bean>
+
+    <!-- 配置后置处理器 MyBeanPost 类 -->
+    <!-- 后置处理器会对当前配置文件中的所有 bean 都添加后置处理器 -->
+    <bean id="myBeanPost" class="com.com.com.yuehai.bean.MyBeanPost"></bean>
+
+</beans>
